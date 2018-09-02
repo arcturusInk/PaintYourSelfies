@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paint Your Selfies</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index-styles.css') }}">
+</head>
+
+<body>
+    <h3>Transform selfies you are insecured about into works of art</h3>
+
+    <form action="." method="POST">
+      <p>Want my picture: <input type="file" name="pic" placeholder="my-pic" accept="image/*">
+        to be in the style of
+        <select name="style">
+          <option value="rain-princess">Rain Princess by Leonid Afremov</option>
+          <option value="wave">The Great Wave off Kanagawa by Hokusai</option>
+        </select>
+        <input type="submit" name="submit_form" value="GO">
+    </form>
+
+<!--
+    <img src="{{ transformedPic }}" alt="Your Transformed Picture!">
+
+
+    <footer>
+      If you like your picture, please consider donating to body positive organizations, such as:
+      <a href=" {{  link  }}" target="_blank"> {{ orgName }}</a>
+      If you like your picture, please consider donating to<a href="http://therepresentationproject.org/donate/" target="_blank">The Representation Project</a>
+
+    </footer>
+    !-->
+</body>
+</html>

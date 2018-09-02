@@ -1,0 +1,17 @@
+body{
+  text-align: center;
+}
+
+img{
+  border: 1px solid black;
+  position: relative;
+  height: 470px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
